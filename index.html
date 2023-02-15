@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="page">
+    <div class="container">
+        <form class="user-form">
+            <div class="form-header">
+                <h2>Registration Form</h2>
+            </div>
+            <div class="form-body">
+                <label for="name">Name</label>
+                <input required type="text" name="name" id="name"/>
+                <label for="email">Email</label>
+                <input required type="email" name="email" id="email"/>
+                <label for="password">Password</label>
+                <input required type="password" name="password" id="password"/>
+                <label for="dob">Date of Birth</label>
+                <input required type="date" name="dob" id="dob"/>
+            </div>
+            <div class="form-terms">
+                <input type="checkbox" name="acceptTerms" id="acceptTerms"/>
+                <label for="acceptTerms">Accept Terms & Conditions</label>
+            </div>
+
+            <div class="form-submit">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="user-history">
+        <h1>Entries</h1>
+        <table id="da" class="history">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dob</th>
+                <th>Accepted terms?</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
